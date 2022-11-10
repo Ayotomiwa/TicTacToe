@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class vsAIDetailsMenu extends JDialog {
+public class VsAIDetailsMenu extends JDialog {
     private final MainMenu mainMenu;
     private JPanel contentPane;
     private JTextField playerNameField;
@@ -15,7 +15,7 @@ public class vsAIDetailsMenu extends JDialog {
     private JButton doneButton;
     private JButton previousButton;
 
-    public vsAIDetailsMenu(String level, MainMenu mainMenu, int result) {
+    public VsAIDetailsMenu(String level, MainMenu mainMenu, int result) {
         setContentPane(contentPane);
         this.mainMenu = mainMenu;
         contentPane.setPreferredSize(this.mainMenu.getPreferredSize());
@@ -37,7 +37,7 @@ public class vsAIDetailsMenu extends JDialog {
         final String finalFirstPlayerName = firstPlayerName;
 
         previousButton.addActionListener(e -> {
-            this.mainMenu.setContentPane(new vsAIMainMenu(this.mainMenu).getContentPane());
+            this.mainMenu.setContentPane(new VsAIMainMenu(this.mainMenu).getContentPane());
             this.mainMenu.revalidate();
             this.mainMenu.repaint();
         });

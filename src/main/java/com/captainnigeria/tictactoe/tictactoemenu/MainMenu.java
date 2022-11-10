@@ -19,7 +19,7 @@ public class MainMenu extends JDialog {
             repaint();
         });
         vsAIButton.addActionListener(e -> {
-            setContentPane(new vsAIMainMenu(mainMenu).getContentPane());
+            setContentPane(new VsAIMainMenu(mainMenu).getContentPane());
             revalidate();
             repaint();
         });

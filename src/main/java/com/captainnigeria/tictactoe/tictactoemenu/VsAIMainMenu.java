@@ -5,7 +5,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 
-public class vsAIMainMenu extends JDialog {
+public class VsAIMainMenu extends JDialog {
     private final MainMenu mainMenu;
     private JPanel contentPane;
     private JButton easyButton;
@@ -13,7 +13,7 @@ public class vsAIMainMenu extends JDialog {
     private JButton hardButton;
     private JButton previousButton;
 
-    public vsAIMainMenu(MainMenu mainMenu) {
+    public VsAIMainMenu(MainMenu mainMenu) {
         setContentPane(contentPane);
         this.mainMenu = mainMenu;
         this.mainMenu.addWindowListener(new WindowAdapter() {
@@ -48,7 +48,7 @@ public class vsAIMainMenu extends JDialog {
                 null, options, options[0]);
         System.out.println(result);
         if (result >= 0) {
-            this.mainMenu.setContentPane(new vsAIDetailsMenu(level, mainMenu, result)
+            this.mainMenu.setContentPane(new VsAIDetailsMenu(level, mainMenu, result)
                     .getContentPane());
         }
     }
