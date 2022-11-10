@@ -23,8 +23,8 @@ public class MainMenu extends JDialog {
             revalidate();
             repaint();
         });
-        setLocationRelativeTo(null);
         pack();
         setVisible(true);
+        setLocationRelativeTo(null);
     }
 }

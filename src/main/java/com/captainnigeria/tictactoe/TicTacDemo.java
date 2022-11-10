@@ -5,7 +5,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Objects;
 import java.util.Random;
 
@@ -49,7 +48,7 @@ public class TicTacDemo extends JFrame {
     private volatile boolean humanOnly = false;
     private volatile boolean aiTurn;
     private volatile boolean maximumReached = false;
-    private final String empty = "   ";
+    private final String empty = "";
 
 
     public TicTacDemo(String level, boolean aiPlaying, String... playerNames) {
@@ -93,6 +92,7 @@ public class TicTacDemo extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(850, 700);
         setVisible(true);
+        setLocationRelativeTo(null);
 
         if (Objects.equals(currentPlayer, aiPlayer)) {
             startAI();
@@ -368,7 +368,6 @@ public class TicTacDemo extends JFrame {
                 bestMove = availableMove;
             }
         }
-        System.out.println("Best Move - " + bestMove);
         return bestMove;
     }
 
