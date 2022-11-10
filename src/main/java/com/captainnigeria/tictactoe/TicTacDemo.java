@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.Random;
 
@@ -317,7 +318,7 @@ public class TicTacDemo extends JFrame {
 
         switch (this.level) {
             case "Easy" -> aiMove = playEasyAI(possibleMovesIndex);
-            case "Medium" -> aiMove = playMediumAI(possibleMovesIndex);
+            case "Medium" -> aiMove = playMediumAI(possibleMovesIndex, firstHumanPlayer);
             case "Hard" -> aiMove = playHardAI(possibleMovesIndex);
         }
         System.out.println("AI MOVE " + aiMove);
@@ -329,25 +330,35 @@ public class TicTacDemo extends JFrame {
     }
 
 
-    public int playMediumAI(int[] possibleMovesIndex) {
+    public int playMediumAI(int[] possibleMovesIndex, char player) {
 
         int[][] winningPositions = new int[][]{{0, 1, 2}, {0, 4, 8}, {0, 3, 6}, {1, 4, 7}, {2, 4, 6}, {2, 5, 8}, {3, 4, 5}, {6, 7, 8}};
 
         for (int[] winningPosition : winningPositions) {
-            int blockWinMove = blockWinningMove(firstHumanPlayer, winningPosition);
+            int blockIndex = getWinningMove(player, winningPosition);
             for (int possibleMove : possibleMovesIndex) {
-                if (possibleMove == blockWinMove) {
-                    return blockWinMove;
+                if (possibleMove == blockIndex) {
+                    return blockIndex;
                 }
             }
         }
         return possibleMovesIndex[new Random().nextInt(boardPlay)];
     }
 
+    public boolean aiCanWinEarly(){
+        int[][] winningPositions = new int[][]{{0, 1, 2}, {0, 4, 8}, {0, 3, 6}, {1, 4, 7}, {2, 4, 6}, {2, 5, 8}, {3, 4, 5}, {6, 7, 8}};
+
+       return !Arrays.stream(winningPositions).map((s)-> getWinningMove(currentPlayer, s )).allMatch((s)-> s == -1);
+    }
+
     public int playHardAI(int[] possibleMovesIndex) {
 
         if (boardPlay == 9) {
             return playEasyAI(possibleMovesIndex);
+        }
+
+        if (aiCanWinEarly()){
+            return playMediumAI(possibleMovesIndex, currentPlayer);
         }
 
         JButton[] practiceButtons = new JButton[boardButtons.length];
@@ -436,7 +447,7 @@ public class TicTacDemo extends JFrame {
         return possibleMovesIndex;
     }
 
-    public int blockWinningMove(char player, int[] moves) {
+    public int getWinningMove(char player, int[] moves) {
         int count = 0;
         int move = -1;
 
