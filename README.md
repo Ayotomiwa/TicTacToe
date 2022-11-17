@@ -14,7 +14,9 @@ When the game starts, the user can choose between playing with human or AI playe
 
 
 
-On Easy mode, the AI plays at random. It does not intend to win or block the Human Player from winning, it is comletely useless. Howver, in the medium and hard mode, the AI is smart enough to block the Human player from winning, and goes further to make to sure it never looses in hard mode. It does this by using an Algorithm called Mini-Max
+On Easy mode, the AI plays at random. It does not intend to win or block the Human Player from winning, it is comletely useless. However, in the medium and hard mode, the AI is smart enough to block the Human player from winning, and further guarantees a win or a draw in hard mode. The AI in Hard mode does this by usinga brute force Algorithm called Mini-Max
 
-Mini-Max Algorithm
 
+Mini-Max Algorithm 
+
+This algortithm can be used in solved games like tictactoe that require just two players. In this implemenation, the recursive function returns a value when a terminal state is reached i.e  +10 for winning, -10 for losing and 0 for a draw. if no terminal state is reached, it continues to go through all the available locations on the board, recursively calls the function called minimax on each available location, and return the best value.
