@@ -332,6 +332,10 @@ public class TicTacDemo extends JFrame {
 
     public int playMediumAI(int[] possibleMovesIndex, char player) {
 
+        if (aiCanWinEarly() && player != aiPlayer){
+            player = aiPlayer;
+        }
+
         int[][] winningPositions = new int[][]{{0, 1, 2}, {0, 4, 8}, {0, 3, 6}, {1, 4, 7}, {2, 4, 6}, {2, 5, 8}, {3, 4, 5}, {6, 7, 8}};
 
         for (int[] winningPosition : winningPositions) {
@@ -348,12 +352,14 @@ public class TicTacDemo extends JFrame {
     public boolean aiCanWinEarly(){
         int[][] winningPositions = new int[][]{{0, 1, 2}, {0, 4, 8}, {0, 3, 6}, {1, 4, 7}, {2, 4, 6}, {2, 5, 8}, {3, 4, 5}, {6, 7, 8}};
 
-       return !Arrays.stream(winningPositions).map((s)-> getWinningMove(currentPlayer, s )).allMatch((s)-> s == -1);
+       return !Arrays.stream(winningPositions).map((s)-> getWinningMove(aiPlayer, s )).allMatch((s)-> s == -1);
     }
 
     public int playHardAI(int[] possibleMovesIndex) {
 
-        if (boardPlay == 9) {
+        boolean firstPlay = boardPlay == 9;
+
+        if (firstPlay) {
             return playEasyAI(possibleMovesIndex);
         }
 
