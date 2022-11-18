@@ -6,20 +6,23 @@ The game GUI was created using the Java Swing UI designer in intellij. The board
 When the game starts, the user can choose between playing with a human or an AI player as seen below. 
 
 
-<p float="left">
- <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/16_11_2022 16_40_38.png"  style="width:500px ; height:400x">
+ 
 
+
+<p>
+ <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/16_11_2022 16_40_38.png"  hspace=20 style="width:500px ; height:800x">
+ <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Screenshot 2022-11-18 014727.png"  hspace=20  style="width:300px ; height:350x; vspace: 50px">
+ <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Screenshot 2022-11-18 014800.png" style="width:300px ; height:350x; padding: 50x">
+</p>
+
+<p>
+<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Untitled video - Made with Clipchamp.gif"  hspace=100 style=" width:400px ; height:300x">
+<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Screenshot 2022-11-17 232715.png" style="width:400px ; height:300x">
 </p>
 
 
-
-<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Untitled video - Made with Clipchamp.gif" style=" width:400px ; height:300x">
-
 As seen above the user can select one of three modes- Easy, Medium & Hard. On Easy mode, the AI plays at random. It does not intend to win or block the Human Player from winning, it is comletely useless. However, in the medium and hard mode, the AI is smart enough to block the Human player from winning, and further guarantees a win or a draw in hard mode. The AI in Hard mode does this by usinga brute force Algorithm called Mini-Max.
 
-
-
- <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Screenshot 2022-11-17 232715.png" style="width:500px ; height:400x">
 
 
 # Mini-Max Algorithm 
