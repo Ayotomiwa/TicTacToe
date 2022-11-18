@@ -6,20 +6,20 @@ The game GUI was created using the Java Swing UI designer in intellij. The board
 When the game starts, the user can choose between playing with a human or an AI player as seen below. 
 
 
-<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/16_11_2022 16_40_38.png" style=" width:500px ; height:400x" >
+<p float="left">
+ <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/16_11_2022 16_40_38.png"  style="width:500px ; height:400x">
 
-<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/ezgif.com-gif-maker.gif" style=" width:500px ; height:400x" >
+</p>
 
 
 
+<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Untitled video - Made with Clipchamp.gif" style=" width:400px ; height:300x">
 
 As seen above the user can select one of three modes- Easy, Medium & Hard. On Easy mode, the AI plays at random. It does not intend to win or block the Human Player from winning, it is comletely useless. However, in the medium and hard mode, the AI is smart enough to block the Human player from winning, and further guarantees a win or a draw in hard mode. The AI in Hard mode does this by usinga brute force Algorithm called Mini-Max.
 
 
 
-
-
-
+ <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Screenshot 2022-11-17 232715.png" style="width:500px ; height:400x">
 
 
 # Mini-Max Algorithm 
