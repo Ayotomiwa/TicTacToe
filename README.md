@@ -21,7 +21,7 @@ As seen above, the user can select one of three modes- Easy, Medium & Hard. On E
 
 # Mini-Max Algorithm 
 
-In this MiniMax implementation, the recursive mininmax function returns a value when a terminal state is reached i.e  +10 for winning, -10 for losing and 0 for a draw. if no terminal state is reached, the AI continues to go through all the available locations on the board, and recursively calls the minimax function on each available location. The AI plays for both players until a terminal state is reached and no location is left. The returned value of the function is the best value and the best move is the index of the best value. 
+In this MiniMax implementation, the AI plays for both players until a terminal state is reached and no location is left by recursively calling the minimax function on each available location. if a terminal state is reached i.e  +10 for winning, -10 for losing and 0 for a draw, the highest returned value of the function is selected as best value and the best move is the index of the best value. 
 
 I made several Hard-Coded improvements to the Hard Mode, so it does not fully rely on the Mini-Max Algorithm. First, the AI is able to play it's first at random if the board is empty to avoid repetitive moves by the AI. Also, the AI is smart enough to take an early win when the human Player makes an error. 
 
