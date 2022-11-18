@@ -10,7 +10,9 @@ When the game starts, the user can choose between playing with a human or an AI 
 
 <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/ezgif.com-gif-maker.gif" style=" width:500px ; height:400x" >
 
-
+<video width="320" height="240" autoplay>
+  <source src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+</video>
 
 
 As seen above the user can select one of three modes- Easy, Medium & Hard. On Easy mode, the AI plays at random. It does not intend to win or block the Human Player from winning, it is comletely useless. However, in the medium and hard mode, the AI is smart enough to block the Human player from winning, and further guarantees a win or a draw in hard mode. The AI in Hard mode does this by usinga brute force Algorithm called Mini-Max.
