@@ -8,7 +8,7 @@ When the game starts, the user can choose between playing with a human or an AI 
 
 <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/16_11_2022 16_40_38.png" style=" width:500px ; height:400x" >
 
-
+<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/ezgif.com-gif-maker.gif" style=" width:500px ; height:400x" >
 
 
 
