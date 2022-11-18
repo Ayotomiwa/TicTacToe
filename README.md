@@ -1,9 +1,9 @@
 # TicTacToe
-TictTacToe Game vs Player or vs AI (Mini-Max Algorithm).
+TictTacToe (Human vs Player or AI (Mini-Max Algorithm)).
 
-The game UI was created using Java Swing UI designer. The board size is 3 x 3, and comprises of buttons which represent each board location. The user plays the game by clicking a location on the board(a button), followed by a "Done" button to confirm the clicked move. The play (X or O) is then registered on the the button selected. 
+The game GUI was created using the Java Swing UI designer in intellij. The board size is 3 x 3, and comprises of buttons which represent each board location. The user plays the game by clicking a location on the board (a button), followed by a "Done" button to confirm the clicked move. The play (X or O) is then registered on the button selected. 
 
-When the game starts, the user can choose between playing with human or AI player. The 
+When the game starts, the user can choose between playing with a human or an AI player as seen below. 
 
 
 <img src="src/main/java/com/captainnigeria/tictactoe/images/16_11_2022 16_40_38.png" style=" width:500px ; height:400x" >
@@ -13,8 +13,22 @@ When the game starts, the user can choose between playing with human or AI playe
 
 
 
+As seen above the user can select one of three modes- Easy, Medium & Hard. On Easy mode, the AI plays at random. It does not intend to win or block the Human Player from winning, it is comletely useless. However, in the medium and hard mode, the AI is smart enough to block the Human player from winning, and further guarantees a win or a draw in hard mode. The AI in Hard mode does this by usinga brute force Algorithm called Mini-Max.
 
-On Easy mode, the AI plays at random. It does not intend to win or block the Human Player from winning, it is comletely useless. However, in the medium and hard mode, the AI is smart enough to block the Human player from winning, and further guarantees a win or a draw in hard mode. The AI in Hard mode does this by usinga brute force Algorithm called Mini-Max
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Mini-Max Algorithm 
