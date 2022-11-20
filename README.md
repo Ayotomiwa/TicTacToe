@@ -6,8 +6,8 @@ The game GUI was created using the Java Swing UI designer in intellij IDE. The b
 When the game starts, the user can choose between playing with a human or an AI player as seen below. 
 
 <p>
- <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/GameMenu.png" hspace=100 style="width:400px ; height:300x">
- <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/playerMenu.png" style="width:400px ; height:300x; vspace: 50px">
+ <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/GameMenu.png" hspace=100 style="width:350px ; height:300x">
+ <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/playerMenu.png" style="width:350px ; height:300x; vspace: 50px">
 </p>
 
 
