@@ -6,14 +6,14 @@ The game GUI was created using the Java Swing UI designer in intellij IDE. The b
 When the game starts, the user can choose between playing with a human or an AI player as seen below. 
 
 <p>
- <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/GameMenu.png" hspace=100 style="width:350px ; height:300x">
- <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/playerMenu.png" style="width:350px ; height:300x; vspace: 50px">
+ <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/GameMenu.png" hspace=100 style="width:300px ; height:300x">
+ <img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/playerMenu.png" style="width:300px ; height:300x; vspace: 50px">
 </p>
 
 
 <p>
-<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/AIMenu1.png" hspace=100 style=" width:400px ; height:350x">
-<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/AIMenu2.png" style="width:400px ; height:300x">
+<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/AIMenu1.png" hspace=100 style=" width:300px ; height:350x">
+<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/AIMenu2.png" style="width:300px ; height:300x">
 </p>
 
 
@@ -26,8 +26,8 @@ In this MiniMax implementation, the AI plays on a seperate Thread for both playe
 I made several Hard-Coded improvements to the Hard Mode, so it does not fully rely on the Mini-Max Algorithm. First, the AI is able to play it's first at random if the board is empty to avoid repetitive moves by the AI. Also, the AI is smart enough to take an early win when the human Player makes an error. 
 
 <p>
-<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Untitled video - Made with Clipchamp.gif" hspace=80 style=" width:400px ; height:300x">
-<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/AIWins.png" style="width:400px ; height:500x">
+<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/Untitled video - Made with Clipchamp.gif" hspace=80 style=" width:300px ; height:300x">
+<img src="src/main/java/com/captainnigeria/tictactoe/Game Snapshots/AIWins.png" style="width:300px ; height:500x">
 </p>
 
 
